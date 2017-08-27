@@ -9,7 +9,7 @@ import reducer from './reducers'
 
 const store = createStore(reducer)
 
-const action = type => store.dispatch(action)
+const action = type => store.dispatch({ type })
 
 function render() {
   ReactDOM.render(
